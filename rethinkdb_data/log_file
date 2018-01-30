@@ -1,0 +1,79 @@
+2018-01-30T02:22:13.853289000 0.247762s notice: Recursively removing directory /Users/reid/bloc/debate-nobrainer/rethinkdb_data/tmp
+2018-01-30T02:22:13.854780000 0.249256s notice: Initializing directory /Users/reid/bloc/debate-nobrainer/rethinkdb_data
+2018-01-30T02:22:13.854846000 0.249319s info: Creating a default database for your convenience. (This is because you ran 'rethinkdb' without 'create', 'serve', or '--join', and the directory '/Users/reid/bloc/debate-nobrainer/rethinkdb_data' did not already exist or is empty.)
+2018-01-30T02:22:13.854869000 0.249341s notice: Running rethinkdb 2.3.6 (CLANG 8.1.0 (clang-802.0.42))...
+2018-01-30T02:22:13.860144000 0.254617s notice: Running on Darwin 16.7.0 x86_64
+2018-01-30T02:22:13.860177000 0.254650s notice: Loading data from directory /Users/reid/bloc/debate-nobrainer/rethinkdb_data
+2018-01-30T02:22:13.959540000 0.354013s info: Automatically using cache size of 4217 MB
+2018-01-30T02:22:13.960526000 0.354998s notice: Listening for intracluster connections on port 29015
+2018-01-30T02:22:13.962263000 0.356735s notice: Listening for client driver connections on port 28015
+2018-01-30T02:22:13.962369000 0.356842s notice: Listening for administrative HTTP connections on port 8080
+2018-01-30T02:22:13.962371000 0.356843s notice: Listening on cluster addresses: 127.0.0.1, ::1
+2018-01-30T02:22:13.962374000 0.356846s notice: Listening on driver addresses: 127.0.0.1, ::1
+2018-01-30T02:22:13.962376000 0.356848s notice: Listening on http addresses: 127.0.0.1, ::1
+2018-01-30T02:22:13.962379000 0.356851s notice: To fully expose RethinkDB on the network, bind to all addresses by running rethinkdb with the `--bind all` command line option.
+2018-01-30T02:22:13.962408000 0.356881s notice: Server ready, "Reids_MacBook_Pro_local_88t" 49425a07-c8b8-4898-bf65-3920f706d67a
+2018-01-30T02:35:32.118147000 798.475072s info: Table 7ee7b019-9279-4948-8383-c072fc8187ca: Starting a new Raft election for term 1.
+2018-01-30T02:35:32.118858000 798.475783s info: Table 7ee7b019-9279-4948-8383-c072fc8187ca: Added replica on this server.
+2018-01-30T02:35:32.136050000 798.492975s info: Table 7ee7b019-9279-4948-8383-c072fc8187ca: This server is Raft leader for term 1. Latest log index is 0.
+2018-01-30T02:35:32.654108000 799.011032s info: Table 7ee7b019-9279-4948-8383-c072fc8187ca: Configuration is changing.
+2018-01-30T02:42:12.758023000 1198.934093s info: Table 2bcb62c3-9a79-4014-b806-b9d7fc51feab: Starting a new Raft election for term 1.
+2018-01-30T02:42:12.758359000 1198.934429s info: Table 2bcb62c3-9a79-4014-b806-b9d7fc51feab: Added replica on this server.
+2018-01-30T02:42:12.777112000 1198.953182s info: Table 2bcb62c3-9a79-4014-b806-b9d7fc51feab: This server is Raft leader for term 1. Latest log index is 0.
+2018-01-30T02:42:13.292397000 1199.468467s info: Table 2bcb62c3-9a79-4014-b806-b9d7fc51feab: Configuration is changing.
+2018-01-30T02:43:21.993360000 1268.168677s notice: Someone asked for the nonwhitelisted file "/robots.txt".  If this should be accessible, add it to the static web assets.
+2018-01-30T02:43:22.303128000 1268.478445s notice: Someone asked for the nonwhitelisted file "/robots.txt".  If this should be accessible, add it to the static web assets.
+2018-01-30T02:45:49.093001000 1415.266750s notice: Someone asked for the nonwhitelisted file "/robots.txt".  If this should be accessible, add it to the static web assets.
+2018-01-30T02:45:49.162611000 1415.336361s notice: Someone asked for the nonwhitelisted file "/robots.txt".  If this should be accessible, add it to the static web assets.
+2018-01-30T03:03:23.171298000 2469.320418s info: Table feddf577-be76-4562-a656-cc79b5a68abb: Starting a new Raft election for term 1.
+2018-01-30T03:03:23.171560000 2469.320679s info: Table feddf577-be76-4562-a656-cc79b5a68abb: Added replica on this server.
+2018-01-30T03:03:23.190728000 2469.339848s info: Table feddf577-be76-4562-a656-cc79b5a68abb: This server is Raft leader for term 1. Latest log index is 0.
+2018-01-30T03:03:23.700679000 2469.849797s info: Table feddf577-be76-4562-a656-cc79b5a68abb: Configuration is changing.
+2018-01-30T03:18:44.237213000 3390.356396s info: Table 5168cb73-2016-4827-9b58-013836a95887: Starting a new Raft election for term 1.
+2018-01-30T03:18:44.237475000 3390.356658s info: Table 5168cb73-2016-4827-9b58-013836a95887: Added replica on this server.
+2018-01-30T03:18:44.258040000 3390.377223s info: Table 5168cb73-2016-4827-9b58-013836a95887: This server is Raft leader for term 1. Latest log index is 0.
+2018-01-30T03:18:44.770356000 3390.889539s info: Table 5168cb73-2016-4827-9b58-013836a95887: Configuration is changing.
+2018-01-30T03:18:44.967773000 3391.086896s info: Table c4e5e120-cbf8-4d7a-8064-2a407e5aa0dc: Starting a new Raft election for term 1.
+2018-01-30T03:18:44.968040000 3391.087163s info: Table c4e5e120-cbf8-4d7a-8064-2a407e5aa0dc: Added replica on this server.
+2018-01-30T03:18:44.985416000 3391.104539s info: Table c4e5e120-cbf8-4d7a-8064-2a407e5aa0dc: This server is Raft leader for term 1. Latest log index is 0.
+2018-01-30T03:18:45.498514000 3391.617636s info: Table c4e5e120-cbf8-4d7a-8064-2a407e5aa0dc: Configuration is changing.
+2018-01-30T03:43:32.816512000 4878.896591s notice: Removing file /Users/reid/bloc/debate-nobrainer/rethinkdb_data/2bcb62c3-9a79-4014-b806-b9d7fc51feab
+2018-01-30T03:43:32.816518000 4878.896596s info: Table 2bcb62c3-9a79-4014-b806-b9d7fc51feab: Deleted the table.
+2018-01-30T03:43:32.850392000 4878.930471s notice: Removing file /Users/reid/bloc/debate-nobrainer/rethinkdb_data/5168cb73-2016-4827-9b58-013836a95887
+2018-01-30T03:43:32.850401000 4878.930479s info: Table 5168cb73-2016-4827-9b58-013836a95887: Deleted the table.
+2018-01-30T03:43:32.872923000 4878.953002s notice: Removing file /Users/reid/bloc/debate-nobrainer/rethinkdb_data/7ee7b019-9279-4948-8383-c072fc8187ca
+2018-01-30T03:43:32.872932000 4878.953010s info: Table 7ee7b019-9279-4948-8383-c072fc8187ca: Deleted the table.
+2018-01-30T03:43:32.984471000 4879.064550s notice: Removing file /Users/reid/bloc/debate-nobrainer/rethinkdb_data/c4e5e120-cbf8-4d7a-8064-2a407e5aa0dc
+2018-01-30T03:43:32.984479000 4879.064557s info: Table c4e5e120-cbf8-4d7a-8064-2a407e5aa0dc: Deleted the table.
+2018-01-30T03:43:33.008710000 4879.088789s notice: Removing file /Users/reid/bloc/debate-nobrainer/rethinkdb_data/feddf577-be76-4562-a656-cc79b5a68abb
+2018-01-30T03:43:33.008718000 4879.088796s info: Table feddf577-be76-4562-a656-cc79b5a68abb: Deleted the table.
+2018-01-30T03:43:33.481495000 4879.561574s info: Table 4fcf645f-461c-4c2f-99c8-3b1a3b473572: Starting a new Raft election for term 1.
+2018-01-30T03:43:33.481767000 4879.561845s info: Table 4fcf645f-461c-4c2f-99c8-3b1a3b473572: Added replica on this server.
+2018-01-30T03:43:33.499765000 4879.579844s info: Table 4fcf645f-461c-4c2f-99c8-3b1a3b473572: This server is Raft leader for term 1. Latest log index is 0.
+2018-01-30T03:43:34.013054000 4880.093133s info: Table 4fcf645f-461c-4c2f-99c8-3b1a3b473572: Configuration is changing.
+2018-01-30T03:43:34.017801000 4880.097879s info: Table 4fcf645f-461c-4c2f-99c8-3b1a3b473572: Configuration is changing.
+2018-01-30T03:43:34.200364000 4880.280442s info: Table c0611306-ae9c-41d3-aadd-99bad6ce904b: Starting a new Raft election for term 1.
+2018-01-30T03:43:34.200737000 4880.280816s info: Table c0611306-ae9c-41d3-aadd-99bad6ce904b: Added replica on this server.
+2018-01-30T03:43:34.219223000 4880.299303s info: Table c0611306-ae9c-41d3-aadd-99bad6ce904b: This server is Raft leader for term 1. Latest log index is 0.
+2018-01-30T03:43:34.733033000 4880.813065s info: Table c0611306-ae9c-41d3-aadd-99bad6ce904b: Configuration is changing.
+2018-01-30T03:43:34.735503000 4880.815534s info: Table c0611306-ae9c-41d3-aadd-99bad6ce904b: Configuration is changing.
+2018-01-30T03:43:34.925876000 4881.005908s info: Table 1f7e5ee1-53c9-4f86-b437-f8763cecc7d8: Starting a new Raft election for term 1.
+2018-01-30T03:43:34.926179000 4881.006210s info: Table 1f7e5ee1-53c9-4f86-b437-f8763cecc7d8: Added replica on this server.
+2018-01-30T03:43:34.943339000 4881.023371s info: Table 1f7e5ee1-53c9-4f86-b437-f8763cecc7d8: This server is Raft leader for term 1. Latest log index is 0.
+2018-01-30T03:43:35.454086000 4881.534117s info: Table 1f7e5ee1-53c9-4f86-b437-f8763cecc7d8: Configuration is changing.
+2018-01-30T03:43:35.456765000 4881.536797s info: Table 1f7e5ee1-53c9-4f86-b437-f8763cecc7d8: Configuration is changing.
+2018-01-30T03:43:35.644507000 4881.724539s info: Table 4003f85d-1f72-41b7-b42e-6b0da5d83f29: Starting a new Raft election for term 1.
+2018-01-30T03:43:35.644863000 4881.724894s info: Table 4003f85d-1f72-41b7-b42e-6b0da5d83f29: Added replica on this server.
+2018-01-30T03:43:35.662892000 4881.742924s info: Table 4003f85d-1f72-41b7-b42e-6b0da5d83f29: This server is Raft leader for term 1. Latest log index is 0.
+2018-01-30T03:43:36.172607000 4882.252639s info: Table 4003f85d-1f72-41b7-b42e-6b0da5d83f29: Configuration is changing.
+2018-01-30T03:43:36.174906000 4882.254938s info: Table 4003f85d-1f72-41b7-b42e-6b0da5d83f29: Configuration is changing.
+2018-01-30T03:43:36.365569000 4882.445553s info: Table ca701736-d2cc-4a6f-80e3-47f5016c3404: Starting a new Raft election for term 1.
+2018-01-30T03:43:36.365915000 4882.445899s info: Table ca701736-d2cc-4a6f-80e3-47f5016c3404: Added replica on this server.
+2018-01-30T03:43:36.384317000 4882.464301s info: Table ca701736-d2cc-4a6f-80e3-47f5016c3404: This server is Raft leader for term 1. Latest log index is 0.
+2018-01-30T03:43:36.898266000 4882.978250s info: Table ca701736-d2cc-4a6f-80e3-47f5016c3404: Configuration is changing.
+2018-01-30T03:43:36.900834000 4882.980817s info: Table ca701736-d2cc-4a6f-80e3-47f5016c3404: Configuration is changing.
+2018-01-30T03:43:37.090931000 4883.170915s info: Table 34fb60c5-5280-46a0-b961-af63c814c575: Starting a new Raft election for term 1.
+2018-01-30T03:43:37.091273000 4883.171257s info: Table 34fb60c5-5280-46a0-b961-af63c814c575: Added replica on this server.
+2018-01-30T03:43:37.109375000 4883.189359s info: Table 34fb60c5-5280-46a0-b961-af63c814c575: This server is Raft leader for term 1. Latest log index is 0.
+2018-01-30T03:43:37.617433000 4883.697417s info: Table 34fb60c5-5280-46a0-b961-af63c814c575: Configuration is changing.
+2018-01-30T03:43:37.619868000 4883.699852s info: Table 34fb60c5-5280-46a0-b961-af63c814c575: Configuration is changing.
