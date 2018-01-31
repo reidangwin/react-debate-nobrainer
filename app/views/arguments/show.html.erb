@@ -1,4 +1,10 @@
 <p id="notice"><%= notice %></p>
 
+<h1>
+  <strong><%= @argument.name %></strong>
+</h1>
+
+<%= react_component("ArgumentContainer", url: arguments_path(format: :sse)) %>
+
 <%= link_to 'Edit', edit_argument_path(@argument) %> |
 <%= link_to 'Back', arguments_path %>

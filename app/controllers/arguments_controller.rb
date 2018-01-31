@@ -1,11 +1,26 @@
 class ArgumentsController < ApplicationController
-  before_action :set_argument, only: [:show, :edit, :update, :destroy]
+  # before_action :set_argument, only: [:show, :edit, :update, :destroy]
+  responders :NobrainerSse
+
+  respond_to :html, :sse, only: [:index]
+  respond_to :json, only: [:create]
+
+  def index
+    arguments = Argument.all
+    respond_with arguments
+  end
+
+  def create
+    argument = Argument.create! argument_params
+    MakeArgument.new(argument.id).enqueue
+    redirect_to arguments_path
+  end
 
   # GET /arguments
   # GET /arguments.json
-  def index
-    @arguments = Argument.all
-  end
+  # def index
+  #   @arguments = Argument.all
+  # end
 
   # GET /arguments/1
   # GET /arguments/1.json
@@ -23,19 +38,19 @@ class ArgumentsController < ApplicationController
 
   # POST /arguments
   # POST /arguments.json
-  def create
-    @argument = Argument.new(argument_params)
+  # def create
+  #   @argument = Argument.new(argument_params)
 
-    respond_to do |format|
-      if @argument.save
-        format.html { redirect_to @argument, notice: 'Argument was successfully created.' }
-        format.json { render :show, status: :created, location: @argument }
-      else
-        format.html { render :new }
-        format.json { render json: @argument.errors, status: :unprocessable_entity }
-      end
-    end
-  end
+  #   respond_to do |format|
+  #     if @argument.save
+  #       format.html { redirect_to @argument, notice: 'Argument was successfully created.' }
+  #       format.json { render :show, status: :created, location: @argument }
+  #     else
+  #       format.html { render :new }
+  #       format.json { render json: @argument.errors, status: :unprocessable_entity }
+  #     end
+  #   end
+  # end
 
   # PATCH/PUT /arguments/1
   # PATCH/PUT /arguments/1.json
@@ -69,6 +84,10 @@ class ArgumentsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def argument_params
-      params.fetch(:argument, {})
+      params.require(:argument).permit(:body)
     end
+
+    # def argument_params
+    #   params.fetch(:argument, {})
+    # end
 end
