@@ -1,7 +1,8 @@
 class ArgumentsController < ApplicationController
   # before_action :set_argument, only: [:show, :edit, :update, :destroy]
-  responders :NobrainerSse
+  require "responders/nobrainer_sse_responder"
 
+  responders :nobrainer_sse
   respond_to :html, :sse, only: [:index]
   respond_to :json, only: [:create]
 
