@@ -1,30 +1,6 @@
 import React, { Component } from 'react';
-import Argument from './Argument'
-import Rx from 'rxjs'
-
-class AggregatedEventSource extends Rx.Subject {
-  constructor(url) {
-    super();
-
-    this.source = new EventSource(url);
-    this.state = {};
-
-    this.source.addEventListener('row', (event) => {
-      const payload = JSON.parse(event.data);
-      if (payload.new_val) { // added or updated
-        this.state[payload.new_val.id] = payload.new_val;
-      } else { // deleted
-        delete this.state[payload.old_val.id];
-      }
-
-      this.next(this.collection());
-    });
-  }
-
-  collection() {
-    return Object.keys(this.state).map(key => this.state[key]);
-  }
-}
+import Argument from './Argument';
+import { AggregatedEventSource } from './helpers';
 
 class ArgumentContainer extends Component {
   constructor(props) {
@@ -40,12 +16,13 @@ class ArgumentContainer extends Component {
 
   
   render() {
+    /* console.log(Routes.argument_events_path({id: '5nUqeEqUXACwi3', format: 'sse'}));*/
     return (
       <div className="container">
         <div className="row">
           <div className="col-md-6">
             {this.state.arguments.map( argument =>
-              <Argument argument={argument} key={argument.id} />
+              <Argument argument={argument} url={Routes.argument_events_path(argument.id, {format: 'sse'})} key={argument.id} />
             )}
           </div>
         </div>

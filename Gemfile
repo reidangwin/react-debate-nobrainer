@@ -26,6 +26,7 @@ gem 'devise-nobrainer'
 gem 'devise-bootstrapped'
 gem 'react-rails'
 gem 'jquery-rails'
+gem "js-routes"
 
 gem 'bootstrap-sass', '~> 3.3.7'
 
@@ -62,6 +63,7 @@ group :development do
   gem 'pry-rails'
   gem 'better_errors'
   gem 'binding_of_caller'
+  gem 'faker'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem

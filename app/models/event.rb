@@ -5,5 +5,5 @@ class Event
   field :body, :type => Text
   field :position, :type => Integer
   belongs_to :argument
-  has_many :reaction
+  has_many :reaction, dependent: :destroy 
 end

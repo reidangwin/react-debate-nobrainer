@@ -15,3 +15,34 @@
 // "bootstrap-sprockets" must be imported before "bootstrap" and "bootstrap/variables"
 @import "bootstrap-sprockets";
 @import "bootstrap";
+
+.card {
+    display: inline-block;
+    border: 2px solid black;
+    padding: 20px;
+    /* width: 20px !important; */
+}
+
+*[class^="reactions-"]>.card {
+    display: block;
+}
+
+.event > .card {
+    min-height: 150px;
+    background-color: beige;
+}
+
+.card p {
+    display: inline;
+}
+
+.card-container {
+    display: block;
+}
+
+.event-container {
+    display: inline;
+    float: left;
+    max-width: 200px;
+}
+
