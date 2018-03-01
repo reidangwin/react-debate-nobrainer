@@ -17,7 +17,7 @@ NoBrainer.configure do |config|
   # * All the above, but with RETHINKDB instead of RDB
   # config.rethinkdb_urls = [config.default_rethinkdb_url]
   if Rails.env.production?
-    config.rethinkdb_urls = ["rethinkdb://admin:#{ENV.fetch('RETHINKDB_PASSWORD')}@#{ENV.fetch('DOCKHERO_HOST')}:28015/<dbname>"]
+    config.rethinkdb_urls = ["rethinkdb://admin:#{ENV.fetch('RETHINKDB_PASSWORD')}@#{ENV.fetch('DOCKHERO_HOST')}:28015/"]
   end
 
 
