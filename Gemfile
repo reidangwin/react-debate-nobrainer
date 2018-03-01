@@ -21,6 +21,7 @@ gem 'uglifier', '>= 1.3.0'
 gem 'webpacker'
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
+gem 'nobrainer'
 gem 'devise'
 gem 'devise-nobrainer'
 gem 'devise-bootstrapped'
