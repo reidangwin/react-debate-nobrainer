@@ -16,6 +16,10 @@ NoBrainer.configure do |config|
   # * RDB_URL, RDB_USER, RDB_PASSWORD, RDB_HOST, RDB_PORT, RDB_DB
   # * All the above, but with RETHINKDB instead of RDB
   # config.rethinkdb_urls = [config.default_rethinkdb_url]
+  if Rails.env.production?
+    config.rethinkdb_urls = ["rethinkdb://admin:#{ENV.fetch('RETHINKDB_PASSWORD')}@#{ENV.fetch('DOCKHERO_HOST')}:28015/<dbname>"]
+  end
+
 
   # ssl_options may be set to {:ca_certs => '/path/to/ca.crt'} to establish
   # an SSL connection to the RethinkDB servers.
