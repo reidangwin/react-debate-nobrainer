@@ -12,8 +12,15 @@ class EventsController < ApplicationController
   end
 
   def create
-    event = Event.create! event_params
-    MakeArgument.new(argument.id).enqueue
+    @event = Event.build(event_params)
+
+    if @event.save
+      flash[:notice] = "Event was saved."
+      redirect_to @argument
+    else
+      flash.now[:alert] = "There was an error saving the event. Please try again."
+      render :new
+    end
     redirect_to arguments_events_path()
   end
 
@@ -84,8 +91,8 @@ class EventsController < ApplicationController
     end
 
     # Never trust parameters from the scary internet, only allow the white list through.
-    def argument_params
-      params.require(:argument).permit(:body)
+    def event_params
+      params.require(:event).permit([:argument, :body, :position])
     end
 
     # def argument_params

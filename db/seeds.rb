@@ -63,7 +63,7 @@ def create_arguments_with_events_and_reactions(argument_count)
   end
 end
 
-create_arguments_with_events_and_reactions(3)
+create_arguments_with_events_and_reactions(1)
 
 arguments = Argument.all
 events = Event.all
