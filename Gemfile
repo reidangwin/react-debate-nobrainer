@@ -27,7 +27,8 @@ gem 'devise-nobrainer'
 gem 'devise-bootstrapped'
 gem 'react-rails'
 gem 'jquery-rails'
-gem "js-routes"
+gem 'js-routes'
+gem 'growlyflash'
 
 gem 'bootstrap-sass', '~> 3.3.7'
 gem "font-awesome-rails"

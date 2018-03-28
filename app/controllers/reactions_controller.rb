@@ -11,69 +11,39 @@ class ReactionsController < ApplicationController
     respond_with reactions
   end
 
+  # POST /arguments/1/events/7/reactions
   def create
-    event = Event.create! event_params
-    MakeArgument.new(argument.id).enqueue
-    redirect_to arguments_events_path()
+    Reaction.create!(reaction_params)
   end
 
-  # GET /arguments
-  # GET /arguments.json
-  # def index
-  #   @arguments = Argument.all
-  # end
-
-  # GET /arguments/1
-  # GET /arguments/1.json
+  # GET /arguments/1/events/7/reactions/99
   def show
   end
 
-  # GET /arguments/new
+  # GET /arguments/1/events/7/reactions/new
   def new
     @reaction = Reaction.new
   end
 
-  # GET /arguments/1/edit
+  # GET /arguments/1/events/7/reactions/99/edit
   def edit
   end
 
-  # POST /arguments
-  # POST /arguments.json
-  # def create
-  #   @argument = Argument.new(argument_params)
-
-  #   respond_to do |format|
-  #     if @argument.save
-  #       format.html { redirect_to @argument, notice: 'Argument was successfully created.' }
-  #       format.json { render :show, status: :created, location: @argument }
-  #     else
-  #       format.html { render :new }
-  #       format.json { render json: @argument.errors, status: :unprocessable_entity }
-  #     end
-  #   end
-  # end
-
-  # PATCH/PUT /arguments/1
-  # PATCH/PUT /arguments/1.json
+  # PATCH/PUT /arguments/1/events/7/reactions/99
   def update
-    respond_to do |format|
-      if @argument.update(argument_params)
-        format.html { redirect_to @argument, notice: 'Argument was successfully updated.' }
-        format.json { render :show, status: :ok, location: @argument }
-      else
-        format.html { render :edit }
-        format.json { render json: @argument.errors, status: :unprocessable_entity }
-      end
+    if @reaction.update(event_params)
+      flash[:notice] = "Reaction was successfuly updated."
+    else
+      flash[:alert] = "There was an error saving the reaction. Please try again."
     end
   end
 
-  # DELETE /arguments/1
-  # DELETE /arguments/1.json
+  # DELETE /arguments/1/events/7/reactions/99
   def destroy
-    @argument.destroy
-    respond_to do |format|
-      format.html { redirect_to arguments_url, notice: 'Argument was successfully destroyed.' }
-      format.json { head :no_content }
+    if @reaction.destroy
+      flash[:notice] = "Reaction was successfully deleted."
+    else
+      flash[:alert] = "There was an error deleting the reaction. Please try again."
     end
   end
 
@@ -84,11 +54,8 @@ class ReactionsController < ApplicationController
     end
 
     # Never trust parameters from the scary internet, only allow the white list through.
-    def argument_params
-      params.require(:argument).permit(:body)
+    def reaction_params
+      params.require(:reaction).permit([:body, :user_id, :event_id, :position])
     end
 
-    # def argument_params
-    #   params.fetch(:argument, {})
-    # end
 end
